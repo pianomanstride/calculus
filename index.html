@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculus 3D Explorer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <header>
+        <div id="lang-switch"></div>
+        <h1>Calculus 3D Explorer</h1>
+        <p class="tagline" id="tagline">A playful journey from slope to gradient</p>
+      </header>
+      <nav id="level-list" aria-label="Level"></nav>
+      <footer>MMG_Agentic · v0.1</footer>
+    </aside>
+    <main id="stage">
+      <div id="canvas-host"></div>
+    </main>
+    <section id="panel">
+      <div id="level-info"></div>
+      <div id="level-controls"></div>
+      <div id="mission"></div>
+    </section>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

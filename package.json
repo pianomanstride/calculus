@@ -1,0 +1,6 @@
+{
+  "name": "calculus3d",
+  "private": true,
+  "type": "module",
+  "description": "Spielerische 3D-Calculus-Lern-App (kein Build-Step, Three.js + KaTeX per CDN)"
+}
