@@ -59,8 +59,6 @@ Each level exports `init(ctx)` and receives the shared stage (a Three.js scene w
 
 ## How it was built
 
-The app was created inside a [Claude Code](https://claude.com/claude-code) session using `/loop` (dynamic, self-paced mode) with a single instruction, roughly: *"Build a 3D browser app that explains calculus playfully, from simple to advanced — one level or one well-scoped improvement per iteration, smoke-test each iteration, done when all 7 levels are playable."*
+The app was created inside a [Claude Code](https://claude.com/claude-code) session using `/loop` (dynamic, self-paced mode) with a single instruction, roughly: *"Build a 3D browser app that explains calculus playfully, from simple to advanced"*
 
 Fable 5 then ran 8 autonomous iterations: scaffold + level 1, then one level per wake-up, then a final full-app verification pass — each iteration syntax-checked all modules, verified import resolution and confirmed every file serves over HTTP before scheduling its own next run.
-
-🤖 Generated with [Claude Code](https://claude.com/claude-code)
